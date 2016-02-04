@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnConfig>
+	<OracleDB>
+	    <dbDriverName>oracle.jdbc.driver.OracleDriver</dbDriverName>
+	    <dbUser>ucb</dbUser>
+	    <dbPassword>qwe</dbPassword>
+	    <dbURI>jdbc:oracle:thin:@10.178.:1521:db1</dbURI>
+	</OracleDB>
+	<SQLServerDB>
+	    <dbDriverName>com.microsoft.sqlserver.jdbc.SQLServerDriver</dbDriverName>
+	    <dbUser>dy</dbUser>
+	    <dbPassword>qwe</dbPassword>
+	    <dbURI>jdbc:sqlserver://localhost;databaseName=OSD001</dbURI>
+	</SQLServerDB>
+</ConnConfig>
