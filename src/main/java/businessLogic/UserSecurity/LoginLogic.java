@@ -4,7 +4,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 import dbConnectionManager.DbConnectionManager;
+import dbConnectionManager.DbUtilities;
 
 public class LoginLogic {
 
@@ -39,9 +41,16 @@ public class LoginLogic {
 			prepareStatement.setString(2, password);
 			ResultSet rs = prepareStatement.executeQuery();
 
-			if (!rs.isBeforeFirst() ) {    
-				 System.out.println("No data"); 
-				} else {
+			if (!rs.isBeforeFirst()) {
+				System.out.println("No data");
+				DbUtilities.closeResultSet(rs);
+				DbUtilities.closeStatment(prepareStatement);
+				DbUtilities.closeConnection(conn);
+			} else {
+				DbUtilities.closeResultSet(rs);
+				DbUtilities.closeStatment(prepareStatement);
+				DbUtilities.closeConnection(conn);
+
 				loginSucess = true;
 			}
 

@@ -1,5 +1,15 @@
 <html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
 <body>
-<h2>Hello World!</h2>
+<form action="ProcessLogin" method="POST">
+	User Name : <input name="userName"/><br>
+	Password : <input name="pwd" type="password"/><br>
+	<input type="submit" value="Login">
+</form>
+
+
 </body>
 </html>
