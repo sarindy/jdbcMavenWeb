@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
 <ConnConfig>
+	<!-- Provide the DB Type for the DB Name e.g oracle or SQL server -->
+	
+	<DBType>
+	<dbName>SQLServerDB</dbName>
+	</DBType>
 	<OracleDB>
 	    <dbDriverName>oracle.jdbc.driver.OracleDriver</dbDriverName>
 	    <dbUser>ucb</dbUser>

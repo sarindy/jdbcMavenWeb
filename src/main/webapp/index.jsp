@@ -9,6 +9,10 @@
 	Password : <input name="pwd" type="password"/><br>
 	<input type="submit" value="Login">
 </form>
+<br>
+<form action="AccountList" method="POST">
+	<input type="submit" value="Get Account">
+</form>
 
 
 </body>

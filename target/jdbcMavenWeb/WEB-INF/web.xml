@@ -9,10 +9,20 @@
 		<description></description>
 		<servlet-class>servlet.ProcessLogin</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>AccountList</servlet-name>
+		<display-name>AccountList</display-name>
+		<description></description>
+		<servlet-class>servlet.AccountList</servlet-class>
+	</servlet>
 		
 	<servlet-mapping>
 		<servlet-name>ProcessLogin</servlet-name>
 		<url-pattern>/ProcessLogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AccountList</servlet-name>
+		<url-pattern>/AccountList</url-pattern>
 	</servlet-mapping>
 	
 </web-app>

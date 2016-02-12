@@ -50,17 +50,17 @@ public class DbConfig {
 		SAXBuilder builder = new SAXBuilder();
 		InputStream is = this.getClass().getResourceAsStream(configFileName);
 		Document doc;
+		String dbName;
 		try {
 			doc = builder.build(is);
 			Element root = doc.getRootElement();
 			/* Database properties */
-			dbDriverName = root.getChild("SQLServerDB").getChildTextTrim(
-					"dbDriverName");
-			dbUserName = root.getChild("SQLServerDB").getChildTextTrim(
-					"dbUser");
-			dbPassword = root.getChild("SQLServerDB").getChildTextTrim(
-					"dbPassword");
-			dbUri = root.getChild("SQLServerDB").getChildTextTrim("dbURI");
+			
+			dbName=root.getChild("DBType").getChildTextTrim("dbName");
+			dbDriverName = root.getChild(dbName).getChildTextTrim("dbDriverName");
+			dbUserName = root.getChild(dbName).getChildTextTrim("dbUser");
+			dbPassword = root.getChild(dbName).getChildTextTrim("dbPassword");
+			dbUri = root.getChild(dbName).getChildTextTrim("dbURI");
 
 		} catch (JDOMException eJDom) {
 
