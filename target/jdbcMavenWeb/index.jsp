@@ -11,8 +11,15 @@
 </form>
 <br>
 <form action="AccountList" method="POST">
+	<input type="submit" value="Get Account">
+</form>
+<br>
+<form action="AccountListEqu" method="POST">
+	Balance : <input name="balance"/><br>
+	Acct Type : <input name="acctType"/><br>
 	<input type="submit" value="Login">
 </form>
+<br>
 
 
 </body>
