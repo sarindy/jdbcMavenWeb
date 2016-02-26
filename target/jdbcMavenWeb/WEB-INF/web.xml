@@ -15,6 +15,12 @@
 		<description></description>
 		<servlet-class>servlet.AccountList</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>AccountListEqu</servlet-name>
+		<display-name>AccountListEqu</display-name>
+		<description></description>
+		<servlet-class>servlet.AccountListEqu</servlet-class>
+	</servlet>
 		
 	<servlet-mapping>
 		<servlet-name>ProcessLogin</servlet-name>
@@ -23,6 +29,10 @@
 	<servlet-mapping>
 		<servlet-name>AccountList</servlet-name>
 		<url-pattern>/AccountList</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AccountListEqu</servlet-name>
+		<url-pattern>/AccountListEqu</url-pattern>
 	</servlet-mapping>
 	
 </web-app>
