@@ -1,5 +1,13 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Build-Jdk: 1.7.0_79
 Built-By: dy
+<<<<<<< HEAD
+=======
+=======
+Built-By: Sarindy
+Build-Jdk: 1.8.0_73
+>>>>>>> origin/master
+>>>>>>> origin/master
 Created-By: Maven Integration for Eclipse
 
