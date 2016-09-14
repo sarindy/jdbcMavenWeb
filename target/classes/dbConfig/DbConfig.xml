@@ -2,20 +2,21 @@
 <!DOCTYPE xml>
 <ConnConfig>
 	<!-- Provide the DB Type for the DB Name e.g oracle or SQL server -->
-	
+
 	<DBType>
-	<dbName>SQLServerDB</dbName>
+		<dbName>SQLServerDB</dbName>
 	</DBType>
 	<OracleDB>
-	    <dbDriverName>oracle.jdbc.driver.OracleDriver</dbDriverName>
-	    <dbUser>ucb</dbUser>
-	    <dbPassword>qwe</dbPassword>
-	    <dbURI>jdbc:oracle:thin:@10.178.:1521:db1</dbURI>
+		<dbDriverName>oracle.jdbc.driver.OracleDriver</dbDriverName>
+		<dbUser>ucb</dbUser>
+		<dbPassword>qwe</dbPassword>
+		<dbURI>jdbc:oracle:thin:@10.178.:1521:db1</dbURI>
 	</OracleDB>
 	<SQLServerDB>
-	    <dbDriverName>com.microsoft.sqlserver.jdbc.SQLServerDriver</dbDriverName>
-	    <dbUser>dy</dbUser>
-	    <dbPassword>qwe</dbPassword>
-	    <dbURI>jdbc:sqlserver://localhost;databaseName=OSD001</dbURI>
+		<dbDriverName>com.microsoft.sqlserver.jdbc.SQLServerDriver
+		</dbDriverName>
+		<dbUser>dy</dbUser>
+		<dbPassword>qwe</dbPassword>
+		<dbURI>jdbc:sqlserver://localhost;databaseName=DYNN</dbURI>
 	</SQLServerDB>
 </ConnConfig>
